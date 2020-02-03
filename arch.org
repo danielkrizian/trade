@@ -36,7 +36,8 @@
 #+END_SRC
 
 #+RESULTS:
-[[file:comp.png]]
+[[comp.png]]
+
 * Description
 | Module/plugin/component/process     | Responsibilities and I/O interface                                                                                                                                                                           |
 | (depending on architecture )        |                                                                                                                                                                                                              |
