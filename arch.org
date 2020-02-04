@@ -1,4 +1,4 @@
-#+BEGIN_SRC ditaa -i :file comp.png :cmdline -s 0.7 -E
+#+BEGIN_SRC ditaa -i :exports results :file comp.png :cmdline -s 0.7 -E
                                             +-------------+
                                             |             |
                                             | portfolio   |
@@ -36,7 +36,7 @@
 #+END_SRC
 
 #+RESULTS:
-[[comp.png]]
+[[file:comp.png]]
 
 * Description
 | Module/plugin/component/process     | Responsibilities and I/O interface                                                                                                                                                                           |
