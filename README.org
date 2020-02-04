@@ -3,21 +3,21 @@
                                             |             |
                                             | portfolio   |
                                             | optimiser   |
-                                            |             |
+                                            |         cPNK|
                                             +-------------+
 
                           +--------------+  +-------------+
                           |              |  |             |
                           | feature      |  | risk        |
                           | engineering  |  | modelling   |
-     +-----------------+  |              |  |             |
+     +-----------------+  |          cPNK|  |         cPNK|
      |                 |  +--------------+  +-------------+
      | data            |
      | preprocessing   |  +--------------+  +-------------+  +------------+                +-------------+  +---------------+
      | cleaning        |  |              |  |             |  |            |                |             |  |               |
      | standardisation |  | predictive   |  | transaction |  | order      |                | portfolio   |  | performance   |
      | normalisation   |  | modelling    |  | cost model  |  | management |                | accounting  |  | risk analysis |
-     |                 |  |              |  |             |  |            |                |             |  |               |
+     |            cPNK |  |          cPNK|  |         cPNK|  |        cPNK|                |         cPNK|  |           cPNK|
      +-----------------+  +--------------+  +-------------+  +------------+                +-------------+  +---------------+
             ingest           calculate          generate                                        update           calculate
             data      ---->   signal    ---->    order    ------------------->   fill   -----> portfolio ---->     pnl
@@ -40,11 +40,11 @@
 
 * Module/plugin/component/process responsibilities and I/O interface
 ** Data feedhandler
-Ingestion of external data sources, conversion of formats and protocols. (e.g. exchanges or public sources such as quandl)
-Feedhandler will capture and convert streams from an external source into a format suitable for further processing
-Data preprocessing, standardisation, normalisation and cleaning
-Treatment of outliers, missing data and cross­checking/validation of raw input, making it more robust.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-Includes data standardisation through techniques such as percentile ranking, z­scoring etc.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+Ingestion of external data sources, conversion of formats and protocols. (e.g. exchanges or public sources such as quandl).
+Feedhandler will capture and convert streams from an external source into a format suitable for further processing.
+Data preprocessing, standardisation, normalisation and cleaning.
+Treatment of outliers, missing data and cross­checking/validation of raw input, making it more robust.
+Includes data standardisation through techniques such as percentile ranking, z­scoring etc.
 ** Feature engineering (alpha generation)
 Conversion of raw input data into alpha signals. Typical strategy then consists of one or several alphas, risk and transaction cost modelling.
 The search for the optimal parameters of the alpha model.
