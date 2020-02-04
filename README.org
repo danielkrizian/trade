@@ -1,4 +1,4 @@
-#+BEGIN_SRC ditaa -i :exports results :file comp.png :cmdline -s 0.7 -E
+#+BEGIN_SRC ditaa -i :exports results :file comp.png :cmdline -s 0.8 -E
                                             +-------------+
                                             |             |
                                             | portfolio   |
